@@ -57,12 +57,12 @@ Lors de la saisie du Pseudo, vous devrez afficher en temps réel dans le titre i
     <h3 id="Bienvenue"></h3>
     <!-- Emmet : form>(input[type=text][id=$])*5 -->
     <form method="get" action="inscription.php" id="InscriptionForm">
-        <input type="text"  value="TheWarriorMaster"  id="pseudo"  placeholder="Choisissez un Pseudo"><br />
+        <input type="text"  value=""  id="pseudo"  placeholder="Choisissez un Pseudo"><br />
         <div class="pseudoError">Ce pseudo est déjà pris.</div><br />
-        <input type="text" value="22" id="age" placeholder="Quel est votre Age ?"><br />
+        <input type="text" value="" id="age" placeholder="Quel est votre Age ?"><br />
         <div class="ageError">Vous devez avoir au moins 18 ans pour vous inscrire.</div><br />
-        <input value="thewarriormaster@gmail.com" type="email" id="email" placeholder="Quel est votre Email ?"><br /><br />
-        <input value="thisismypassword" type="password" id="mdp" placeholder="****"><br /><br />
+        <input value="" type="email" id="email" placeholder="Quel est votre Email ?"><br /><br />
+        <input value="" type="password" id="mdp" placeholder="****"><br /><br />
         <input type="submit" id="submit" value="M'inscrire">
     </form>
     
@@ -76,8 +76,55 @@ Lors de la saisie du Pseudo, vous devrez afficher en temps réel dans le titre i
 
 
         var inputPseudo = document.getElementById('pseudo');
-FONCTION VERIFPSEUDO ICI
+        console.log(inputPseudo);
+        
+        function verifPseudo(inputPseudo){
+            if(inputPseudo !== membres.pseudo){
+                return true;
+            } else{
+                return false;
+            }
+        }
+        
         inputPseudo.addEventListener('input', verifPseudo);
+
+        if(verifPseudo(inputPseudo)){
+            verifPseudo = true;
+        } else{
+            document.write('pseudoError');
+            input('submit').value(none);
+        }
+
+        var inputAge = document.getElementById('age');
+        console.log(inputAge);
+        var legalAge = 18;
+
+        function verifAge(inputAge){
+            if(inputAge >= legalAge){
+                return true;
+            } else{
+                return false;
+            }
+        }
+        
+        inputAge.addEventListener('input', verifAge);
+
+        if(verifAge(inputAge)){
+            legalAge = true;
+        } else{
+            document.write('ageError');
+        }
+
+        if(verifPseudo(inputPseudo)){
+            h3 = ('Bonjour' + inputPseudo); (!!!!!!!!!!!!!!!!!!!!'');
+        }
+
+        
+        var inscription = document.getElementsByTagName('form');
+        console.log(inscription);
+        inscription.addEventListener('click', XXXXX);
+
+
 
 
     </script>
