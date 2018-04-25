@@ -1,78 +1,113 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Site Web Apple</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/atelierpratique.css" rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-    </head>
-    <body>
 
-        <main class="container">
+<head>
+    <title>Site Web Apple</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./assets/css/atelierpratique.css" rel="stylesheet">
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-            <header class="row">
-<<<<<<< HEAD
-                <div class="col-md-8">
-                    <menu type="toolbar">
+<body>
 
-                    </menu>
+    <header class="container">
+        <div class="row">
+            <div class="col-md">
+                <nav>
+                    <img src="./assets/img/logo.png" alt="">
+                    <a href="#mac">  Mac </a>
+                    <a href="#ipad">  iPad  </a>
+                    <a href="#iphone">  iPhone  </a>
+                    <a href="#watch">  Watch  </a>
+                    <a href="#tv">  TV  </a>
+                    <a href="#musique">  Musique  </a>
+                    <a href="#assistance">  Assistance  </a>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md">
+                <img src="./assets/img/menu/iPhone7.png" alt="obligatoire">
+                <img src="./assets/img/menu/iPhone6s.png" alt="">
+                <img src="./assets/img/menu/iPhoneSE.png" alt="">
+                <img src="./assets/img/menu/iOs10.png" alt="">
+                <img src="./assets/img/menu/Accessoires.png" alt="">
+                <img src="./assets/img/menu/Comparer.png" alt="">
+            </div>    
+        </div>
+    </header>
+
+
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-12" id="section1">
+                <!-- <img src="./assets/img/hero_large.jpg" alt=""> -->
+                <p>ici une section avec fichier img en background
+                    <br>avec un titre et sous titre etc</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" id="section2">
+                <!-- <img src="./assets/img/iPhone.png" alt=""> -->
+                <p>ici une autre section avec............</p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <div class="container" id="formulaire">
+        <!-- ici le formulaire.....voir pour la structure..les col doivent etre alignées -->
+        <form id="MonFormulaire" action="contact.php" method="GET">
+            <fieldset>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <input type="text" id="fullname" placeholder="Nom et Prénom">
+                    </div>
                 </div>
-=======
-                <p>ici la bar du menu avec les fichiers img associer qui apparaissent</p>
-                <menu type="toolbar" class="col-md-8">
->>>>>>> b9d8d4222211b3324b3a33c43faddeecd5a40bee
-
-                
-            </header>
-
-
-            <section class="row">
-                <div class="col-md-8">
-                    <p>ici une section avec fichier img en background<br>avec un titre et sous titre etc</p>
-
+                <div class="row">    
+                    <div class="col-lg-6">
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
                 </div>
-
-                <div class="col-md-8">
-                    <p>ici une autre section avec............</p>
-
+                <div class="row">
+                    <div class="col-lg-6">
+                        <input type="tel" id="tel" placeholder="Téléphone">
+                    </div>
                 </div>
-
-                <div class="col-md-8">
-                    <!-- ici le formulaire.....voir pour la structure..les col doivent etre alignées -->
-                    <form id="MonFormulaire" action="contact.php" method="GET">
-                        <fieldset>
-                            <input type="text" id="fullname" placeholder="Nom et Prénom">
-                            <input type="email" id="email" placeholder="Email">
-                            <input type="tel" id="tel" placeholder="Téléphone">
-                            <input type="text" id="sujet" placeholder="Sujet">
-                            <textarea id="message" cols="30" rows="10" placeholder="Votre Message"></textarea>
-                            <input type="submit" value="Envoyer ma Demande">
-                        </fieldset>
-                    </form>
+                <div class="row">
+                    <div class="col-md-12">
+                        <input type="text" id="sujet" placeholder="Sujet">
+                    </div>
                 </div>
-            </section>
-
-
-            
-
-
-            <footer class="row">
-                <div class="col-md-8">
-<<<<<<< HEAD
-
-=======
-                    <p>text du footer ici centré sur la page</p>
->>>>>>> b9d8d4222211b3324b3a33c43faddeecd5a40bee
+                <div class="row">
+                    <div class="col-md-12">
+                        <textarea id="message" cols="30" rows="10" placeholder="Votre Message"></textarea>
+                    </div>
                 </div>
-            </footer>
-    
-        </main>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="submit" value="Envoyer ma Demande">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 
 
+    <footer class="container">
+        <div class="row">
+            <div class="col-md">
+                <p>text du footer ici centré sur la page</p>
+            </div>
+        </div>
+    </footer>
 
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="./assets/js/atelierpratique.js"></script>
-    </body>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/atelierpratique.js"></script>
+</body>
+
 </html>
