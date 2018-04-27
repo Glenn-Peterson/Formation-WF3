@@ -1,0 +1,39 @@
+/*  Couleurs à utiliser: 
+	navbar : #061339
+    premier bloc : #B9CDFF + background
+    titre h1 : #FFF
+    autres titres : #2F4073
+	footer : #061339
+    tête chat défaut : #7885A5
+    tête chat hover : #061339 */
+
+#topbar{background-color: #061339;}
+
+h1{color: #FFF; font-family: 'Merienda', sans-serif; text-shadow: 2px 2px 4px #000000;}
+h2{color: #B9CDFF; font-family: 'Merienda', sans-serif;}
+h3, h4{color: #2F4073; font-family: 'Merienda', sans-serif;}
+
+#banner{background-image: url(../img/background.jpg); min-height: 200px; padding-top: 80px;}
+#presentation{background-color: #f2f2f2; min-height: 500px;}
+#bottom{background-color: #dedede;}
+#bottom img{color: #7885a5;}
+footer{background-color: #061339;}
+footer p{color: #B9CDFF; text-align: right; margin-right: 10px;}
+
+/* Les media queries*/
+
+/* Small devices (under 768px) */
+@media (min-width: 544px) { 
+}
+ 
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+}
+ 
+/* Large devices (d992px and up) */
+@media (min-width: 992px) {
+}
+ 
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) {   
+}
