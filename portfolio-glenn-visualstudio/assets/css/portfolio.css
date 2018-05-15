@@ -1,0 +1,26 @@
+h1, h2{color: #FFF; text-align: center; font-family: 'Merienda', sans-serif; text-shadow: 2px 2px 4px #000000;}
+
+.nav-item{text-align: right;}
+
+#middle{background-image: url(../img/web.jpg); padding-top: 3.5%; padding-bottom: 3%; max-height: 100%;}
+#middle p{color: #FFF;}
+#carousel{max-height: 50%; max-width: 50%;}
+
+footer{background-color: #5c647c;}
+footer p{color: #FFF; text-align: center; margin-bottom: 0;}
+
+/* Small devices (under 768px) */
+@media (min-width: 544px) { 
+}
+ 
+/* Medium devices (768px and up) */
+@media (min-width: 768px) {
+}
+ 
+/* Large devices (d992px and up) */
+@media (min-width: 992px) {
+}
+ 
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) {   
+}
